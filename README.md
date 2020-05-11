@@ -1,4 +1,4 @@
-#A unique Rock Paper Scissors card game with mind game by Bing Cheng and Ng Jun Kiat
+# A unique Rock Paper Scissors card game with mind game by Bing Cheng and Ng Jun Kiat
 
 
 # Tic Tac Toe Online Multiplayer
