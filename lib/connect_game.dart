@@ -60,7 +60,7 @@ class ConnectGameState extends State<ConnectGame> {
                       map["name"] =
                           _controller.text == null ? "XYZ" : _controller.text;
                       map["type"] = "0";
-                      connect("192.168.1.110", 5500, map);
+                      connect("178.128.22.105", 5500, map);
                     },
                   ),
                 )

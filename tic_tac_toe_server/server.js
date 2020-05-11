@@ -84,4 +84,4 @@ server.on('listening', () => {
   console.log(`server listening ${address.address}:${address.port}`);
 });
 
-server.bind(5500,"192.168.1.110");
+server.bind(5500,"178.128.22.105");

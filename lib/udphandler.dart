@@ -4,7 +4,7 @@ import 'nanoid/nanoid.dart';
 
 class UDPHandler {
   static RawDatagramSocket socket;
-  static String address = "192.168.1.110";
+  static String address = "178.128.22.105";
   static int port = 5500;
   static String id;
 
