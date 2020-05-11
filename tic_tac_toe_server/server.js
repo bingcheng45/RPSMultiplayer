@@ -22,7 +22,7 @@ server.on('message', (msg, rinfo) => {
             const cnIdSecond = connectionIds[i+1];
             const response = {
                 type:0,
-                msg:`${(cnIdSecond.name == null) ? "Guest" : cnIdSecond.name }`,
+                msg:`${(cnIdSecond === null) ? 'Guest' : (cnIdSecond.name ==='') ? 'Guest' : cnIdSecond.name }`,
                 which:0
             }
             var randomNumber = Math.random();
@@ -34,7 +34,7 @@ server.on('message', (msg, rinfo) => {
             console.log(`response which ${response.which}`);
             
             server.send(JSON.stringify(response),cnIdFirst.port,cnIdFirst.host);
-            response.msg = `${cnIdFirst.name}`;
+            response.msg = `${(cnIdFirst === null) ? 'Guest' : (cnIdFirst.name ==='') ? 'Guest' : cnIdFirst.name}`;
             response.which = response.which == 1 ? -1 : 1;
             console.log(`response which ${response.which}`);
             server.send(JSON.stringify(response),cnIdSecond.port,cnIdSecond.host);
